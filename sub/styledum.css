@@ -1,0 +1,51 @@
+/* styledum.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e3f2fd; /* Warna background halaman biru muda lembut */
+}
+
+/* Kotak Login (Kartu) */
+.login-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px; /* Lebar maksimal form */
+  border-radius: 15px; /* Membuat sudut tumpul/melengkung */
+  overflow: hidden; /* Agar anak elemen tidak keluar dari radius */
+}
+
+/* Gambar Avatar / Logo */
+.img-container {
+  text-align: center;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover;
+}
+
+/* Efek Animasi muncul perlahan (Zoom In) */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Responsif untuk layar HP kecil */
+@media screen and (max-width: 450px) {
+  .login-card {
+    width: 90%; /* Di HP, lebar kartu 90% layar */
+  }
+}
